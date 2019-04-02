@@ -248,6 +248,7 @@ public class Program extends PApplet {
 				setMineCount(dif); // set mine count to match difficulty
 				
 				// restart game with new difficulty (or restart with same if same difficulty was selected)
+				gameBoard.setMines(mines); // change mine count based to difficulty
 				gameBoard.randomize(gameBoard.getResolution().x, gameBoard.getResolution().y); // Randomize mine locations in the gameboard
 				gameBoard.setSurroundAll(); // find how many mines surround every non mine tile and save that information to Tile objects surround property
 				
