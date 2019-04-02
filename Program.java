@@ -56,13 +56,13 @@ public class Program extends PApplet {
 		
 		switch(dif) {
 		case EASY:
-			mines = (int)(tileRows * tileColumns * 0.10); // ~10% of tiles are mines
+			mines = (int)(tileRows * tileColumns * 0.1); // ~10% of tiles are mines
 			break;
 		case MEDIUM:
-			mines = (int)(tileRows * tileColumns * 0.3); // ~30% of tiles are mines
+			mines = (int)(tileRows * tileColumns * 0.15); // ~15% of tiles are mines
 			break;
 		case HARD:
-			mines = (int)(tileRows * tileColumns * 0.7); // ~70% of tiles are mines
+			mines = (int)(tileRows * tileColumns * 0.25); // ~25% of tiles are mines
 			break;
 		}
 	}
